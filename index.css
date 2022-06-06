@@ -1,0 +1,60 @@
+h1{
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+    
+    div{
+    display: flex;
+    justify-content: space-around;
+}
+form{
+    margin: auto;
+    padding: 30px;
+    width: 30%;
+    height: 400px;
+}
+label{
+    font-size: 18px;
+    font-weight: bold;
+}
+table th{
+    background-color: blue;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+table td,table th{
+    text-align: center;
+}
+table{
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+tr>td:nth-child(8){
+padding: 10px;
+font-size: 12px;
+}
+table tr:nth-child(even){
+    backgroundColor:blue;
+}
+input[type="text"],input[type="number"],select,textarea{
+ width: 80%;
+ padding: 8px;
+ border-radius: 4px;
+
+}
+input[type="submit"]{
+    border: 0px;
+padding: 12px 10px;
+background-color: blue;
+width: 80%;
+margin-top: 10px;
+cursor: pointer;
+border-radius: 10px;
+color: white;
+}
+

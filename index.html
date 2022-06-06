@@ -4,213 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unit2 C2</title>
-    <style>
-      * {
-        
-        margin: 0px;
-        padding: 0px;
-      }
-      
-      #main>#banner{
-        border-radius: 15px;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(1,fr);
-        background-color: #273185;
-        margin-bottom: 40px;
-      }
-      
-      #banner>div:nth-child(1){
-        color: white;
-        padding: 30px;
-      }
-      #banner>div>h1{
-margin-bottom: 10px;      }
-
-      button{
-        margin-top: 10px;
-        border-radius: 5px;
-        padding: 5px;
-        border: 0px;
-
-      }
-      #banner>div>img{
-        width: 70%;
-      }
-      #services{
-        margin: auto;
-        display: flex;
-        margin-bottom: 40px;
-        gap: 10px;
-        text-align: center;
-      }
-      #main>#services>div{
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-        background-color: #aecfed;
-      }
-      #services>div>img+h2{
-        background-color: white;
-        margin-top: 10px;
-
-      }
-      #services>div>h2+p{
-        background-color: white;
-        color: grey;
-        margin-top: 0px;
-        padding: 5px;
-      }
-
-      #services>div>img{
-        width: 80%;
-        
-      }
-      #works{
-        width: 95%;
-        text-align: center;
-        margin: auto;
-      }
-      #works>div{
-        display: flex;
-        margin: auto;
-         gap: 20px;
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(2,1fr);
-        margin-top: 20px;
-        
-      }
-      #works>div>div{
-        margin: auto;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-        text-align:left;
-      }
-      #works>div>div>img{
-width: 100%;
-
-      }
-
-      /* Medium Screen */
-      @media only screen and (min-width: 500px) and (max-width: 768px) {
-        #banner>div{
-          flex-direction: column;
-        }
-        #services{
-          display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2,1fr);
-      }
-      #works>div{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(4,1fr);
-      }
-      }
-
-      /* Small Screen */
-      @media only screen and (min-width: 320px) and (max-width: 499px) {
-        #banner>div{
-          flex-direction: column;
-        }
-        #services{
-          display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(3,1fr);
-        }
-        #works>div{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(8,1fr);
-      }
-      }
-    </style>
+    <title>U2C3</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div id="main">
-      <div id="banner">
-        <!-- Here should be 2 divs one for the banner heading and button and the second is for banner image -->
-        <div>
-          <h1>You are in safe hands</h1>
-          <p>Choose the experts in end to end surgical care</p>
-          <button>Know More</button>
-        </div>
-        <div>
-          <img src="https://www.practostatic.com/consumer-home/practo-care/1631634827/dweb_hero_banner.png" alt="Error">
-        </div>
-      </div>
-      <div id="services">
-        <!-- Here should be 6 divs. All of them should be in a single line for large screen. For medium and large screen refer to question statement -->
-        <div>
-          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
-           <h2>Instant Video Consultation</h1>
-           <p>Connect within 60 secs</p>
-        </div>
-        <div>
-          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
-          <h2>Instant Video Consultation</h1>
-          <p>Connect within 60 secs</p>
-        </div>
-        <div>
-          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
-          <h2>Instant Video Consultation</h1>
-          <p>Connect within 60 secs</p>
-        </div>
-        <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
-          <h2>Instant Video Consultation</h1>
-          <p>Connect within 60 secs</p></div>
-        <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
-          <h2>Instant Video Consultation</h1>
-          <p>Connect within 60 secs</p></div>
-        <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="">
-          <h2>Instant Video Consultation</h1>
-          <p>Connect within 60 secs</p></div>
-      </div>
-      <div id="works">
-        <h1>Book an appointment for an in-clinic consultation</h1>
-        <p>Find experienced doctors across all specialties</p>
-        <div>
-          <!-- Here should be 8 divs. They should be in 4 colums and two rows for large screen.For medium and large screen refer to question statement -->
-      <div>
-        <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
-      <h2>Dentist</h2>
-      <p>Teething trouble?Schedule a dental Checkup</p>
-      
-      </div>
-      <div>
-        <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
-        <h2>Dentist</h2>
-        <p>Teething trouble?Schedule a dental Checkup</p>
-      </div>
-      <div>
-        <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
-        <h2>Dentist</h2>
-        <p>Teething trouble?Schedule a dental Checkup</p>
-      </div>
-      <div>
-        <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
-        <h2>Dentist</h2>
-        <p>Teething trouble?Schedule a dental Checkup</p>
-      </div>
-      <div>
-        <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
-        <h2>Dentist</h2>
-        <p>Teething trouble?Schedule a dental Checkup</p>
-      </div>
-      <div>
-        <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
-        <h2>Dentist</h2>
-        <p>Teething trouble?Schedule a dental Checkup</p>
-      </div>
-      <div>
-        <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
-        <h2>Dentist</h2>
-        <p>Teething trouble?Schedule a dental Checkup</p>
-      </div>
-      <div>
-        <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="">
-        <h2>Dentist</h2>
-        <p>Teething trouble?Schedule a dental Checkup</p>
-      </div>
-        </div>
-      </div>
+    <!-- Dont make any changes here -->
+    <h1>Masai Employee Records</h1>
+
+    <div>
+      <!-- ***** We are using form here  ****  -->
+      <form>
+        <label for="">Employee Name</label><br />
+        <input id="name" type="text" placeholder="Enter Student Name" /><br />
+        <label for="">Employee ID</label><br />
+        <input
+          id="employeeID"
+          type="number"
+          placeholder="Enter Employee ID"
+        /><br />
+        <label for="">Department </label><br />
+        <select id="department">
+          <option value="">Select Department</option>
+          <option value="Frontend">Frontend</option>
+          <option value="Backend">Backend</option>
+          <option value="Operations">Operations</option>
+          <option value="HR">HR</option>
+          <option value="IA">IA</option></select
+        ><br />
+        <label for="">Experience </label><br />
+        <input id="exp" type="number" placeholder="Experience in Years" /><br />
+        <label for="">Email Address </label><br />
+        <input type="text" id="email" placeholder="Enter Email Address" /><br />
+        <label for="">Mobile Number </label><br />
+        <input id="mbl" type="number" placeholder="Enter Mobile number" /><br />
+        <input type="submit" />
+      </form>
+      <table>
+        <!-- Dont change order of columns -->
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Employee ID</th>
+            <th>Department</th>
+            <th>Experience in years</th>
+            <th>Email address</th>
+            <th>Mobile Number</th>
+            <th>Role</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Append your output here -->
+        </tbody>
+      </table>
     </div>
   </body>
 </html>
+
+<script src="record.js"></script>
